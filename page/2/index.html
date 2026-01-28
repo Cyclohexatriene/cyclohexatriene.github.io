@@ -1281,7 +1281,7 @@
 <script>
 NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
   // 第一步：先加载本地LeanCloud SDK
-  NexT.utils.getScript('/js/av.js', () => {
+  NexT.utils.getScript('/sdk/av.js', () => {
     // 第二步：SDK加载成功后，再加载Valine
     NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
       var GUEST = ['nick', 'mail', 'link'];
